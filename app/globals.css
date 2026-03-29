@@ -1,18 +1,21 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-html {
-  scroll-behavior: smooth;
+:root {
+  --background: #09090b;
+  --foreground: #fafafa;
+  --muted: #8b8b8e;
+  --accent: #6366f1;
+  --tile: #0f0f11;
+  --tile-border: rgba(255, 255, 255, 0.06);
 }
 
 body {
-  background: #0a0a0a;
-  color: #f5f5f5;
+  color: var(--foreground);
+  background: #09090b;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
 }
