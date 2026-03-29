@@ -35,6 +35,22 @@ const products = [
     status: "building" as const,
   },
   {
+    name: "ContractPilot",
+    initials: "CP",
+    href: "https://contractpilot-tau.vercel.app",
+    displayUrl: "contractpilot-tau.vercel.app",
+    tagline: "Contracts after you win the deal",
+    status: "live" as const,
+  },
+  {
+    name: "OutreachPilot",
+    initials: "OP",
+    href: "https://outreachpilot-six.vercel.app",
+    displayUrl: "outreachpilot-six.vercel.app",
+    tagline: "Cold outreach to paid invoices",
+    status: "live" as const,
+  },
+  {
     name: "Nexora",
     initials: "NX",
     href: "https://web-zeta-three-69.vercel.app",
@@ -131,7 +147,8 @@ function ProductTile({
 
 export default function Home() {
   const row1 = products.slice(0, 3);
-  const row2 = products.slice(3);
+  const row2 = products.slice(3, 6);
+  const row3 = products.slice(6);
 
   return (
     <div className="min-h-screen bg-zinc-950 text-zinc-100">
@@ -187,10 +204,17 @@ export default function Home() {
                 <ProductTile key={p.name} {...p} />
               ))}
             </div>
-            <div className="grid gap-5 sm:grid-cols-2 lg:mx-auto lg:max-w-[calc(66.666%-0.42rem)] lg:grid-cols-2">
+            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {row2.map((p) => (
                 <ProductTile key={p.name} {...p} />
               ))}
+            </div>
+            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="hidden lg:block" aria-hidden />
+              {row3.map((p) => (
+                <ProductTile key={p.name} {...p} />
+              ))}
+              <div className="hidden lg:block" aria-hidden />
             </div>
           </div>
         </section>

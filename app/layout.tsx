@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://pilotmain.com"),
   title: "Pilot Main — AI tools that make work faster",
   description:
-    "Pilot Main product suite: ProposalPilot, InvoicePilot, DocuPilot, QuotePilot, and Nexora. Simple, powerful AI software for freelancers, contractors, and growing teams.",
+    "Pilot Main product suite: ProposalPilot, InvoicePilot, DocuPilot, QuotePilot, ContractPilot, OutreachPilot, and Nexora. Simple, powerful AI software for freelancers, contractors, and growing teams.",
   openGraph: {
     title: "Pilot Main",
     description: "AI tools that make work faster.",
