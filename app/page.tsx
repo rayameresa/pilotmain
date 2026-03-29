@@ -183,8 +183,8 @@ export default function Home() {
           </a>
         </header>
 
-        <section id="products" className="mt-24 sm:mt-28 md:mt-32">
-          <div className="mb-10 text-center sm:mb-12">
+        <section id="products" className="mt-12 sm:mt-14 md:mt-16">
+          <div className="mb-8 text-center sm:mb-9">
             <h2 className="text-sm font-semibold uppercase tracking-[0.2em] text-zinc-500">
               Live stack
             </h2>
