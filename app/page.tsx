@@ -146,10 +146,6 @@ function ProductTile({
 }
 
 export default function Home() {
-  const row1 = products.slice(0, 3);
-  const row2 = products.slice(3, 6);
-  const row3 = products.slice(6);
-
   return (
     <div className="min-h-screen bg-zinc-950 text-zinc-100">
       <div
@@ -198,23 +194,11 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="mx-auto max-w-5xl space-5">
+          <div className="mx-auto max-w-5xl">
             <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              {row1.map((p) => (
+              {products.map((p) => (
                 <ProductTile key={p.name} {...p} />
               ))}
-            </div>
-            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              {row2.map((p) => (
-                <ProductTile key={p.name} {...p} />
-              ))}
-            </div>
-            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              <div className="hidden lg:block" aria-hidden />
-              {row3.map((p) => (
-                <ProductTile key={p.name} {...p} />
-              ))}
-              <div className="hidden lg:block" aria-hidden />
             </div>
           </div>
         </section>
