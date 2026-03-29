@@ -209,7 +209,7 @@ export default function Home() {
             <span className="text-zinc-400">pilotmain.com</span>
           </p>
           <p className="mt-2 text-xs text-zinc-600">
-            Registrar: Namecheap · Hosting: Vercel
+            Performance, security, and privacy — engineered in from day one.
           </p>
         </footer>
       </div>
