@@ -211,14 +211,6 @@ export default function Home() {
           <p className="mt-2 text-xs text-zinc-600">
             Performance, security, and privacy — engineered in from day one.
           </p>
-          <p className="mt-4">
-            <a
-              href="/handbook"
-              className="text-sm font-medium text-indigo-400 hover:text-indigo-300"
-            >
-              Suite handbook →
-            </a>
-          </p>
         </footer>
       </div>
     </div>
